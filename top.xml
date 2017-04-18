@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<My_albums_player>
+<Album type="album" albumid="1" country="UK" mytop="1">
+   <title>Sgt. Pepper's Lonely Hearts Club Band</title>
+   <artist>The Beatles</artist>
+   <label>Parlophone</label>
+   <producer>George Martin</producer>
+   <cover>
+     <url>
+    	http://e.snmc.io/lk/s/l/fe3813c0860fa09b385d806c2fb7992f/1945048.jpg
+     </url>
+     <showtruesize>true</showtruesize>
+     <title>Poster of "Sgt. Pepper's Lonely Hearts Club Band"</title>
+     </cover>
+   <language>English</language>
+   <release>
+	   <year>1967</year>
+	   <month>6</month>
+	   <day>1</day>
+     </release>
+   <RYM_rating>4.2</RYM_rating>
+   <rank_overall>22</rank_overall>
+   <genre main_genre="Psychedelic Pop" sub_genre="Pop Rock"></genre>
+   <total_length>39:43</total_length>
+   <Player player="true">
+     <volume volumecontrol="true">
+       <standartvolume>50</standartvolume>
+       <maxvolume>100</maxvolume>
+       <minvolume>0</minvolume>
+     </volume>
+     <equalizer equalizationcontrol="true">
+      <basscontrol>true</basscontrol>
+      <amplitudecontrol>true</amplitudecontrol>
+      <frequencycontrol>true</frequencycontrol>
+      <resonancecontrol>true</resonancecontrol>
+      <tonecontrol>true</tonecontrol>
+      <filterselect>true</filterselect>
+    </equalizer>
+     <showcover>true</showcover>
+     <bitrate>320</bitrate>
+     <format>mp3</format>
+     <number_of_songs>13</number_of_songs>
+     <autoplay>true</autoplay>
+     <reverse>false</reverse>
+     <repeat>false</repeat>
+     <automix>true</automix>
+     <lyrics lyricscontrol="true" lyricsID="1">
+       <show>true</show>
+       <karaoke>true</karaoke>
+     </lyrics>
+     </Player>
+   </Album>
+<Album type="album" albumid="2" country="UK, US" mytop="2">
+      <title>Are You Experienced?</title>
+      <artist>The Jimi Hendrix Experience</artist>
+      <label>Track</label>
+      <producer>Chas Chandler</producer>
+      <cover>
+        <url>http://e.snmc.io/lk/s/l/58af55051263aa21a321d7a86a8b11c3/2054254.jpg</url>
+        <showtruesize>true</showtruesize>
+        <title>Poster of "Are You Experienced?"</title>
+      </cover>
+      <language>English</language>
+      <release>
+	    <year>1967</year>
+		  <month>5</month>
+		  <day>12</day>
+      </release>
+      <RYM_rating>4.4</RYM_rating>
+      <rank_overall>36</rank_overall>
+      <genre main_genre="Psychedelic Rock" sub_genre="Acid Rock">
+      </genre>
+      <total_length>40:12</total_length>
+      <Player player="true">
+     <volume volumecontrol="true">
+       <standartvolume>50</standartvolume>
+       <maxvolume>100</maxvolume>
+       <minvolume>0</minvolume>
+     </volume>
+     <equalizer equalizationcontrol="true">
+      <basscontrol>true</basscontrol>
+      <amplitudecontrol>true</amplitudecontrol>
+      <frequencycontrol>true</frequencycontrol>
+      <resonancecontrol>true</resonancecontrol>
+      <tonecontrol>true</tonecontrol>
+      <filterselect>true</filterselect>
+    </equalizer>
+     <showcover>true</showcover>
+     <bitrate>848</bitrate>
+     <format>FLAC</format>
+     <number_of_songs>11</number_of_songs>
+     <autoplay>true</autoplay>
+     <reverse>false</reverse>
+     <repeat>false</repeat>
+     <automix>true</automix>
+     <lyrics lyricscontrol="true" lyricsID="2">
+       <show>true</show>
+       <karaoke>true</karaoke>
+     </lyrics>
+     </Player>
+     </Album>
+<Album type="album" albumid="3" country="UK" mytop="3">
+  <title>Abbey Road</title>
+  <artist>The Beatles</artist>
+  <label>Apple</label>
+  <producer>George Martin</producer>
+  <cover>
+    <url>
+	  http://e.snmc.io/lk/s/l/e333142aaa3241eccd2b7bb60866f349/2635795.jpg</url>
+    <showtruesize>true</showtruesize>
+    <title>Poster of "Abbey Road"</title>
+  </cover>
+  <language>English</language>
+  <release>
+	<year>1969</year>
+		<month>9</month>
+		<day>26</day>
+  </release>
+  <RYM_rating>4.31</RYM_rating>
+  <rank_overall>8</rank_overall>
+  <genre main_genre="Rock" sub_genre="Pop Rock">
+  </genre>
+  <total_length>47:23</total_length>
+   <Player player="true">
+     <volume volumecontrol="true">
+       <standartvolume>50</standartvolume>
+       <maxvolume>100</maxvolume>
+       <minvolume>0</minvolume>
+     </volume>
+     <equalizer equalizationcontrol="true">
+      <basscontrol>true</basscontrol>
+      <amplitudecontrol>true</amplitudecontrol>
+      <frequencycontrol>true</frequencycontrol>
+      <resonancecontrol>true</resonancecontrol>
+      <tonecontrol>true</tonecontrol>
+      <filterselect>true</filterselect>
+    </equalizer>
+     <showcover>true</showcover>
+     <bitrate>320</bitrate>
+     <format>mp3</format>
+     <number_of_songs>17</number_of_songs>
+     <autoplay>true</autoplay>
+     <reverse>false</reverse>
+     <repeat>false</repeat>
+     <automix>true</automix>
+     <lyrics lyricscontrol="true" lyricsID="3">
+       <show>true</show>
+       <karaoke>true</karaoke>
+     </lyrics>
+     </Player>
+ </Album>
+<Album type="album" albumid="4" country="US" mytop="4">
+  <title>Pet Sounds</title>
+  <artist>The Beach Boys</artist>
+  <label>Capitol</label>
+  <producer>Brian Wilson</producer>
+  <cover>
+     <url>
+     	http://e.snmc.io/lk/s/l/0eeb90ac54c33cb56d25d410670978ad/3633017.jpeg
+     </url>
+     <showtruesize>true</showtruesize>
+     <title>Poster of "Pet Sounds"</title>
+     </cover>
+  <language>English</language>
+  <release>
+	<year>1966</year>
+	<month>5</month>
+	<day>16</day>
+  </release>
+  <RYM_rating>4.22</RYM_rating>
+  <rank_overall>12</rank_overall>
+  <genre main_genre="Baroque Pop" sub_genre="Sunshine Pop"></genre>  
+  <total_length>35:57</total_length>
+    <Player player="true" startvolume="standartvolume">
+     <volume volumecontrol="true">
+       <standartvolume>50</standartvolume>
+       <maxvolume>100</maxvolume>
+       <minvolume>0</minvolume>
+     </volume>
+     <equalizer equalizationcontrol="true">
+      <basscontrol>true</basscontrol>
+      <amplitudecontrol>true</amplitudecontrol>
+      <frequencycontrol>true</frequencycontrol>
+      <resonancecontrol>true</resonancecontrol>
+      <tonecontrol>true</tonecontrol>
+      <filterselect>true</filterselect>
+    </equalizer>
+     <showcover>true</showcover>
+     <showlenght>true</showlenght>
+     <bitrate>900</bitrate>
+     <format>FLAC</format>
+     <number_of_songs>13</number_of_songs>
+     <autoplay>true</autoplay>
+     <reverse>false</reverse>
+     <repeat>false</repeat>
+     <automix>true</automix>
+     <lyrics lyricscontrol="true" lyricsID="4">
+       <show>true</show>
+       <karaoke>true</karaoke>
+     </lyrics>
+     </Player>
+ </Album>
+</My_albums_player>
