@@ -13,6 +13,10 @@
      <title>Poster of "Sgt. Pepper's Lonely Hearts Club Band"</title>
      </cover>
    <language>English</language>
+   <record>
+     <from>1966</from>
+     <to>1967</to>
+   </record>
    <release>
 	   <year>1967</year>
 	   <month>6</month>
@@ -61,6 +65,10 @@
         <title>Poster of "Are You Experienced?"</title>
       </cover>
       <language>English</language>
+      <record>
+        <from>1966</from>
+        <to>1967</to>
+      </record>
       <release>
 	    <year>1967</year>
 		  <month>5</month>
@@ -111,6 +119,10 @@
     <title>Poster of "Abbey Road"</title>
   </cover>
   <language>English</language>
+  <record>
+    <from>1969</from>
+    <to>1969</to>
+  </record>
   <release>
 	<year>1969</year>
 		<month>9</month>
@@ -162,6 +174,10 @@
      <title>Poster of "Pet Sounds"</title>
      </cover>
   <language>English</language>
+  <record>
+    <from>1965</from>
+    <to>1966</to>
+  </record>
   <release>
 	<year>1966</year>
 	<month>5</month>
@@ -195,6 +211,62 @@
      <repeat>false</repeat>
      <automix>true</automix>
      <lyrics lyricscontrol="true" lyricsID="4">
+       <show>true</show>
+       <karaoke>true</karaoke>
+     </lyrics>
+     </Player>
+ </Album>
+ <Album type="album" albumid="5" country="Australia" mytop="5">
+  <title>Immersion</title>
+  <artist>Pendulum</artist>
+  <label>Warner Music UK</label>
+  <producer>Rob Swire</producer>
+  <cover>
+     <url>
+      https://upload.wikimedia.org/wikipedia/en/2/29/Pendulum_immersion_artwork.jpg
+     </url>
+     <showtruesize>true</showtruesize>
+     <title>Poster of "Immersion"</title>
+     </cover>
+  <language>English</language>
+  <record>
+    <from>2008</from>
+    <to>2010</to>
+  </record>
+  <release>
+  <year>2010</year>
+  <month>5</month>
+  <day>21</day>
+  </release>
+  <RYM_rating>4</RYM_rating>
+  <rank_overall>245</rank_overall>
+  <genre main_genre="Drum and Bass" sub_genre="Electronic rock">
+  </genre>  
+  <total_length>67:14</total_length>
+    <Player player="true" startvolume="standartvolume">
+     <volume volumecontrol="true">
+       <standartvolume>50</standartvolume>
+       <maxvolume>100</maxvolume>
+       <minvolume>0</minvolume>
+     </volume>
+     <equalizer equalizationcontrol="true">
+      <basscontrol>true</basscontrol>
+      <amplitudecontrol>true</amplitudecontrol>
+      <frequencycontrol>true</frequencycontrol>
+      <resonancecontrol>true</resonancecontrol>
+      <tonecontrol>true</tonecontrol>
+      <filterselect>true</filterselect>
+    </equalizer>
+     <showcover>true</showcover>
+     <showlenght>true</showlenght>
+     <bitrate>1103</bitrate>
+     <format>FLAC</format>
+     <number_of_songs>15</number_of_songs>
+     <autoplay>true</autoplay>
+     <reverse>false</reverse>
+     <repeat>false</repeat>
+     <automix>true</automix>
+     <lyrics lyricscontrol="true" lyricsID="5">
        <show>true</show>
        <karaoke>true</karaoke>
      </lyrics>
