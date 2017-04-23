@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="My_albums_player">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Album" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="title"/>
+              <xs:element type="xs:string" name="artist"/>
+              <xs:element type="xs:string" name="label"/>
+              <xs:element type="xs:string" name="producer"/>
+              <xs:element name="cover">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:anyURL" name="url"/>
+                    <xs:element type="xs:boolean" name="showtruesize"/>
+                    <xs:element type="xs:string" name="title"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:string" name="language"/>
+              <xs:element name="record">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:date" name="from"/>
+                    <xs:element type="xs:date" name="to"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="release">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:short" name="year"/>
+                    <xs:element type="xs:short" name="month"/>
+                    <xs:element type="xs:short" name="day"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:float" name="RYM_rating"/>
+              <xs:element type="xs:short" name="rank_overall"/>
+              <xs:element name="genre">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:string" name="main_genre" use="optional"/>
+                      <xs:attribute type="xs:string" name="sub_genre" use="optional"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:duration" name="total_length"/>
+              <xs:element name="Player">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="volume">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:signedShort" name="standartvolume"/>
+                          <xs:element type="xs:signedShort" name="maxvolume"/>
+                          <xs:element type="xs:signedShort" name="minvolume"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:boolean" name="volumecontrol" use="optional"/>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="equalizer">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:boolean" name="basscontrol"/>
+                          <xs:element type="xs:boolean" name="amplitudecontrol"/>
+                          <xs:element type="xs:boolean" name="frequencycontrol"/>
+                          <xs:element type="xs:boolean" name="resonancecontrol"/>
+                          <xs:element type="xs:boolean" name="tonecontrol"/>
+                          <xs:element type="xs:boolean" name="filterselect"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:boolean" name="equalizationcontrol" use="optional"/>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element type="xs:boolean" name="showcover"/>
+                    <xs:element type="xs:boolean" name="showlenght" minOccurs="0"/>
+                    <xs:element type="xs:short" name="bitrate"/>
+                    <xs:element type="xs:string" name="format"/>
+                    <xs:element type="xs:string" name="number_of_songs"/>
+                    <xs:element type="xs:boolean" name="autoplay"/>
+                    <xs:element type="xs:boolean" name="reverse"/>
+                    <xs:element type="xs:boolean" name="repeat"/>
+                    <xs:element type="xs:boolean" name="automix"/>
+                    <xs:element name="lyrics">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:boolean" name="show"/>
+                          <xs:element type="xs:boolean" name="karaoke"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:boolean" name="lyricscontrol" use="optional"/>
+                        <xs:attribute type="xs:byte" name="lyricsID" use="optional"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="player" use="optional"/>
+                  <xs:attribute type="xs:string" name="startvolume" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="type" use="optional"/>
+            <xs:attribute type="xs:byte" name="albumid" use="optional"/>
+            <xs:attribute type="xs:string" name="country" use="optional"/>
+            <xs:attribute type="xs:byte" name="mytop" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

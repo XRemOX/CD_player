@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+  <title>Dokumentace</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    .cover {
+      width: 25%;
+    }
+    .release, .player, .record {
+      width: 60%;
+    }
+   
+    .panel {
+      width: 40%;
+    }
+    .year {
+      margin-top: 20px;
+    }
+    footer {
+      color: #FFF;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      padding: 0 40px;
+      font-size: 17px;
+      height: 50px;
+      line-height: 50px;
+      background-color: #3366CC;
+    }
+    footer .col-md-4:nth-child(1) {
+      text-align: left;
+    }
+    footer .col-md-4:nth-child(2) {
+      text-align: center;
+    }
+    footer .col-md-4:nth-child(3) {
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <div class="jumbotron">
+      <h1>CD player</h1>      
+      <p>Co to je? Aplikace, díky které, lze přehrávát mé oblibené albumy.</p>
+      <p>Dalé následuje seznám a popsaní elementů a typů výuživánich v XML</p>
+    </div>
+  </header>
+  
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav">
+        <li><a href="#elements">Elementy</a></li>
+        <li><a href="#type">Typy</a></li>
+        <li><a href="#footer">Patička</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main> 
+    <h1 id="elements">Elementy</h1>
+    <table class="elements table table-hover">
+      <caption>Seznám elementů</caption>
+        <thead>
+          <tr class="info">
+            <th>Název</th>
+            <th>Týp</th>
+            <th>Co znamená?</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>title</td>
+            <td>xs:string</td>
+            <td>Nazev albumu</td>
+          </tr>
+          <tr>
+            <td>artist</td>
+            <td>xs:string</td>
+            <td>Skupina</td>
+          </tr>
+          <tr>
+            <td>label</td>
+            <td>xs:string</td>
+            <td>Label</td>
+          </tr>
+          <tr>
+            <td>producer</td>
+            <td>xs:string</td>
+            <td>Producer</td>
+          </tr>
+          <tr>
+            <td><a href="#cover">cover</a></td>
+            <td>xs:complexType</td>
+            <td>Plakat</td>
+          </tr>
+          <tr>
+            <td>language</td>
+            <td>xs:string</td>
+            <td>Jazýk</td>
+          </tr>
+           <tr>
+            <td><a href="#record">record</a></td>
+            <td>xs:complexType</td>
+            <td>Datům zápisu</td>
+          </tr>
+          <tr>
+            <td><a href="#release">release</a></td>
+            <td>xs:complexType</td>
+            <td>Datum vydani</td>
+          </tr>
+          <tr>
+            <td>RYM_rating</td>
+            <td>xs:float</td>
+            <td>Hodnocení RYM</td>
+          </tr>
+          <tr>
+            <td>rank_overall</td>
+            <td>xs:short</td>
+            <td>Hodnocení celosvětové</td>
+          </tr>
+          <tr>
+            <td><a href="#genre">genre</a></td>
+            <td>xs:complexType</td>
+            <td>Žanr hudby</td>
+          </tr>
+          <tr>
+            <td>total_lenght</td>
+            <td>xs:duration</td>
+            <td>Celková delka přehravaní</td>
+          </tr>
+          <tr>
+            <td><a href="#player">Player</a></td>
+            <td>xs:complexType</td>
+            <td>Nastavení přehravačé</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="cover table table-hover" id="cover">
+        <caption>cover</caption>
+        <thead>
+          <tr class="info">
+            <th>Název</th>
+            <th>Týp</th>
+            <th>Informace</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>url</td>
+            <td>xs:anyURI</td>
+            <td>Odkaz na plakat</td>
+          </tr>
+          <tr>
+            <td>showtruesize</td>
+            <td>xs:boolean</td>
+            <td>Zobrazit original</td>
+          </tr>
+          <tr>
+            <td>title</td>
+            <td>xs:string</td>
+            <td>Název albumu</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="record table table-hover" id="record">
+        <caption>record</caption>
+        <thead>
+          <tr class="info">
+            <th>Název</th>
+            <th>Týp</th>
+            <th>Informace</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>from</td>
+            <td>xs:date</td>
+            <td>Začátek zápisu</td>
+          </tr>
+          <tr>
+            <td>to</td>
+            <td>xs:date</td>
+            <td>Konec zápisu</td>
+          </tr>
+        </tbody>
+      </table>
+<table class="release table table-hover" id="release">
+        <caption>release</caption>
+        <thead>
+          <tr class="info">
+            <th>Název</th>
+            <th>Týp</th>
+            <th>Informace</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>year</td>
+            <td><a href="#year">year</a></td>
+            <td>Rok vydání</td>
+          </tr>
+          <tr>
+            <td>month</td>
+            <td><a href="#month">month</a></td>
+            <td>Měsic vydání</td>
+          </tr>
+          <tr>
+            <td>day</td>
+            <td><a href="#day">day</a></td>
+            <td>Den vydání</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="Player table table-hover" id="Player">
+        <caption>Player</caption>
+        <thead>
+          <tr class="info">
+            <th>Název</th>
+            <th>Týp</th>
+            <th>Informace</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="#volume">volume</a></td>
+            <td>xs:complexType</td>
+            <td>Nastávení hlasitosti</td>
+          </tr>
+          <tr>
+            <td><a href="#equalizer">equalizer</a></td>
+            <td>xs:complexType</td>
+            <td>Nastávení equalizeru</td>
+          </tr>
+          <tr>
+            <td>showcover</td>
+            <td>xs:boolean</td>
+            <td>Zobrázení plakatu</td>
+          </tr>
+          <tr>
+            <td>showlenght</td>
+            <td>xs:boolean</td>
+            <td>Zobrázení delky</td>
+          </tr>
+          <tr>
+            <td>bitrate</td>
+            <td><a href="#bitrate">bitrate</a></td>
+            <td>Bitrate</td>
+          </tr>
+          <tr>
+            <td>format</td>
+            <td><a href="#format">format</a></td>
+            <td>Format audio</td>
+          </tr>
+          <tr>
+            <td>number_of_songs</td>
+            <td>xs:short</td>
+            <td>Počet tracků</td>
+          </tr>
+          <tr>
+            <td>autoplay</td>
+            <td>xs:boolean</td>
+            <td>Spuštění hudby od momentu spuštění playeru</td>
+          </tr>
+          <tr>
+            <td>reverse</td>
+            <td>xs:boolean</td>
+            <td>Zápnutí/Výpnutí reverse</td>
+          </tr>
+          <tr>
+            <td>repeat</td>
+            <td>xs:boolean</td>
+            <td>Zápnutí/Výpnutí repeat</td>
+          </tr>
+          <tr>
+            <td>automix</td>
+            <td>xs:boolean</td>
+            <td>Zápnutí/Výpnuti automix</td>
+          </tr>
+          <tr>
+            <td><a href="#lyrics">lyrics</a></td>
+            <td>xs:complexType</td>
+            <td>Titulky k trackům</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="volume table table-hover" id="volume">
+        <caption>volume</caption>
+        <thead>
+          <tr class="info">
+            <th>Název</th>
+            <th>Týp</th>
+            <th>Informace</th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>standartvolume</td>
+            <td>xs:signedShort</td>
+            <td>Počateční hlasitost</td>
+          </tr>
+          <tr>
+            <td>maxvolume</td>
+            <td>xs:signedShort</td>
+            <td>Maximalní hlasitost</td>
+          </tr>
+          <tr>
+            <td>minvolume</td>
+            <td>xs:signedShort</td>
+            <td>Minimalní hlasitost</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="equalizer table table-hover" id="equalizer">
+        <caption>equalizer</caption>
+        <thead>
+          <tr class="info">
+            <th>Název</th>
+            <th>Týp</th>
+            <th>Informace</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>basscontrol</td>
+            <td>xs:boolean</td>
+            <td>Zápnutí/Výpnuti bass</td>
+          </tr>
+          <tr>
+            <td>amplitudecontrol</td>
+            <td>xs:boolean</td>
+            <td>Zápnutí/Výpnuti amplitude</td>
+          </tr>
+          <tr>
+            <td>frequencycontrol</td>
+            <td>xs:boolean</td>
+            <td>Zápnutí/Výpnuti frequency</td>
+          </tr>
+          <tr>
+            <td>resonancecontrol</td>
+            <td>xs:boolean</td>
+            <td>Zápnutí/Výpnuti resonance</td>
+          </tr>
+          <tr>
+            <td>tonecontrol</td>
+            <td>xs:boolean</td>
+            <td>Zápnutí/Výpnuti tone</td>
+          </tr>
+          <tr>
+            <td>filterselect</td>
+            <td>xs:boolean</td>
+            <td>Zápnutí/Výpnuti výběru filtrů</td>
+          </tr>
+          <tr>
+            <td>equalizationcontrol</td>
+            <td>xs:boolean</td>
+            <td>Zápnutí/Výpnuti ovládání equalizeru</td>
+          </tr>
+        </tbody>
+      </table>
+
+       <table class="lyrics table table-hover" id="lyrics">
+        <caption>lyrics</caption>
+        <thead>
+          <tr class="info">
+            <th>Název</th>
+            <th>Týp</th>
+            <th>Informace</th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>show</td>
+            <td>xs:boolean</td>
+            <td>Zobrazení/Výpinání titulek</td>
+          </tr>
+          <tr>
+            <td>karaoke</td>
+            <td>xs:boolean</td>
+            <td>Zápnutí/Výpinání karaoke</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2 id="type">Týpy</h2>
+      <div class="year panel panel-default" id="year">
+        <div class="panel-heading">year</div>
+        <div class="panel-body">
+          <ul>
+            <li>Čtyřciferné čislo, označující rok</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="month panel panel-default" id="month">
+        <div class="panel-heading">month</div>
+        <div class="panel-body">
+          <ul>
+            <li>Čislo od 1 do 12, označující měsíc</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="day panel panel-default" id="day">
+        <div class="panel-heading">day</div>
+        <div class="panel-body">
+          <ul>
+            <li>Čislo od 1 do 31, označující den</li>
+          </ul>
+        </div>
+      </div>
+
+      
+      <div class="format panel panel-default" id="format">
+        <div class="panel-heading">format</div>
+        <div class="panel-body">
+          <ul>
+            <li>Nabývá hodnotu s názvem formatu audio</li>
+          </ul>
+        </div>
+      </div>
+      
+
+      <div class="bitrate panel panel-default" id="bitrate">
+        <div class="panel-heading">bitrate</div>
+        <div class="panel-body">
+         <ul>
+          <li>Muže nabývát ruzné hodnoty, které záleží na formatu</li>
+          </ul>
+        </div>
+      </div>
+  
+
+  <footer id="footer">
+    <div class="row">
+      <div class="col-md-4">Meh soft</div>
+      <div class="col-md-4">All right reserved © 2017</div>
+      <div class="col-md-4">Viacheslav Spitsyn</div>
+    </div>
+  </footer>
+</div>
+
+</body>
+</html>
